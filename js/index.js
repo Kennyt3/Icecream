@@ -88,5 +88,14 @@ onFormSubmit(inputValue)
 input.value = " "
 
 }
+let clearbtn = document.querySelector(".clear")
+
+function clearUp(){
+input.value = " "
+}
+
+
+clearbtn.addEventListener("click", clearUp)
+
 
 form.addEventListener("submit", onFormSubmitHandler)

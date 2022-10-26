@@ -117,3 +117,10 @@ margin-top: 20px
     background-color: var(--primaryColor);
     color: white;
 }
+
+@media (max-width: 700px){
+    .form{
+    width: 50%;
+    }
+
+}
