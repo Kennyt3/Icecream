@@ -70,7 +70,6 @@ margin-top: 20px
     padding: 5px 16px;
     border-radius: 8px;
     color: white;
-    
     outline: none;
     box-shadow: none;
     border: 1px solid transparent;
@@ -81,6 +80,7 @@ margin-top: 20px
     color: white;
     background-color: rgb(186, 12, 255);
     outline: none;
+    margin-left: 5px;
     box-shadow: none;
     border: 1px solid transparent;
 }

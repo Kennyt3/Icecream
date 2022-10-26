@@ -18,19 +18,23 @@ li.remove()
 function onEdit(event){
 let editButtonClicked = event.target
 let li = editButtonClicked.parentNode.parentNode.parentNode
+let deletebtn = li.childNodes[1].childNodes[5]
 let child = li.childNodes[1].childNodes[3].innerHTML
 input.value = child
 let newbtn = document.createElement("button")
 newbtn.innerHTML = `Done`
 newbtn.classList.add("doneBtn")
 li.append(newbtn)
-
+editButtonClicked.disabled = true
 newbtn.addEventListener("click", doThis)
 function doThis(){
 let spanny = li.childNodes[1].childNodes[3]
 spanny.innerHTML = input.value
+console.log(spanny.innerHTML)
 input.value = ""
+editButtonClicked.disabled = false
 newbtn.remove()
+
 }
 }
 // }
